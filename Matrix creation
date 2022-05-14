@@ -1,0 +1,9 @@
+m = int(input("how many rows in your matrix"))
+n = int(input("how many columns in your matrix"))
+matrix = []
+for i in range(m):
+    raw_row = list(input())
+    new_row = []
+    for n in raw_row:
+        new_row.append(int(n))
+    matrix.append(new_row)
