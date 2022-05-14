@@ -1,3 +1,4 @@
+from rowreduction2 import row_reduction
 m = int(input("how many rows in your matrix"))
 n = int(input("how many columns in your matrix"))
 matrix = []
@@ -7,3 +8,5 @@ for i in range(m):
     for n in raw_row:
         new_row.append(int(n))
     matrix.append(new_row)
+
+"""print(row_reduction(matrix, n))"""
