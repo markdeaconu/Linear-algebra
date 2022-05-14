@@ -9,4 +9,4 @@ for i in range(m):
         new_row.append(int(n))
     matrix.append(new_row)
 
-"""print(row_reduction(matrix, n))"""
+"""print(row_reduction(matrix))"""
