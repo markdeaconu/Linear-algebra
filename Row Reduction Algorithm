@@ -44,8 +44,9 @@ def create_leading_1(matrix1, column):
         return matrix1
     return new_matrix
 
-def row_reduction(matrix, n, j=0):
+def row_reduction(matrix, j=0):
+    n = len(matrix[0])
     if j == int(n):
         return(matrix)
     else:
-        return(row_reduction(create_leading_1(matrix,j+1), n, j+1))
+        return(row_reduction(create_leading_1(matrix,j+1), j+1))
